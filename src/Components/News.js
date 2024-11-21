@@ -216,15 +216,11 @@ export default class News extends Component {
       <div className='container my-3'>
         <h1>NewsMonkey - Top Headlines</h1>
         <div className="row">
-            <div className="col-md-4">
-                <NewsItem title="First News" description = "First Description" imageUrl = "https://static.politico.com/03/7d/569958c94cef9c10674981337f51/trump-07485.jpg"/>
-            </div>
-            <div className="col-md-4">
-                <NewsItem title="First News" description = "First Description"/>
-            </div>
-            <div className="col-md-4">
-                <NewsItem title="First News" description = "First Description"/>
-            </div>
+          {this.state.article.map((element)=>{
+          return <div className="col-md-4" key={element.url}>
+                  <NewsItem title={element.title ? element.title.slice(0, 45) : "No Title Available"} description = {element.description ? element.description.slice(0, 88) : "No Description Available"} imageUrl = {element.urlToImage} newsUrl = {element.url}/>
+          </div>  
+          })}
         </div>
       </div>
     )
