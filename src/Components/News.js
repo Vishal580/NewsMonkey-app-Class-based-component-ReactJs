@@ -28,16 +28,20 @@ export default class News extends Component {
   }
 
   async updateNews() {
+    this.props.setProgress(20);
     let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=3a749e55962943d1a70387895f0533c5&page=${this.state.page}&pageSize=${this.props.pageSize}`;
     this.setState({ loading: true });
     let data = await fetch(url);
+    this.props.setProgress(40);
     let parsedata = await data.json();
+    this.props.setProgress(70);
     console.log(parsedata);
     this.setState({
       articles: parsedata.articles,
       totalResults: parsedata.totalResults,
       loading: false,
     });
+    this.props.setProgress(100);
   }
   async componentDidMount() {
     // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=3a749e55962943d1a70387895f0533c5&page=1&pageSize=${this.props.pageSize}&`;

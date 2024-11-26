@@ -6,7 +6,9 @@ export default class NewsItem extends Component {
     return (
       <div className='my-3'>
         <div className="card">
-        <span className="position-absolute top-0 translate-middle badge rounded-pill bg-danger" style={{left: '90%', zindex: '1'}}>{source}</span>
+            <div className="container">
+              <span className="badge rounded-pill bg-danger" style={{display: 'flex', justifyContent: 'flex-end', position: 'absolute', right: '0'}}>{source}</span>
+            </div>
             <img src={!imageUrl?"https://assets-prd.ignimgs.com/2024/06/03/eldenring-shadow-fp-blogroll-1717445459923.jpg?width=1280":imageUrl} className="card-img-top" alt="..."/>
             <div className="card-body">
                 <h5 className="card-title">{title}...</h5>
