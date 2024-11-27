@@ -105,7 +105,7 @@ export default class News extends Component {
   render() {
     return (
       <>
-        <h1 className="text-center">
+        <h1 className="text-center" style={{marginTop: '80px'}}>
           NewsMonkey - Top {this.props.category} Headlines
         </h1>
         {this.state.loading && <Spinner/>}
