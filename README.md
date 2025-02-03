@@ -37,7 +37,7 @@ You may also see any lint errors in the console.
 
 Navigate through different news categories using the navbar. The app will fetch and display the latest news articles from the selected category.
 
-### Code Structure
+## Code Structure
 
 src/
 │
