@@ -1,75 +1,90 @@
-# Getting Started with Create React App
+# NewsMonkey
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+NewsMonkey is a React-based news application that fetches and displays news articles from various categories using an API. The app includes routing, a loading bar, and a user-friendly interface, all built with class-based components.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Fetches news articles from different categories such as General, Business, Technology, Entertainment, Health, Science, and Sports.
+- Displays a loading progress bar while fetching data.
+- Responsive design for an optimal viewing experience on different devices.
+- Simple and clean navigation using 
 
-### `npm start`
+## Installation
 
+To get the project up and running locally, follow these steps:
+
+1. Clone the repository:
+
+Open Git Bash
+`git clone https://github.com/your-username/newsmonkey.git`
+cd newsmonkey
+
+2. Install dependencies:
+`npm install`
+
+3. Create a .env file in the root directory and add your News API key
+**REACT_APP_NEWS_API=your_api_key_here**
+
+4. Start the development server:
+`npm start`
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+## Usage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Navigate through different news categories using the navbar. The app will fetch and display the latest news articles from the selected category.
 
-### `npm run build`
+### Code Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# NewsMonkey-app-using-ReactJs
+src/
+│
+├── Components/
+│   ├── loading.gif
+│   ├── Navbar.js
+│   ├── News.js
+│   ├── NewsItem.js
+│   ├── Spinner.js
+│
+├── App.css
+├── App.js
+├── index.css
+├── index.js (marked with an "M")
+└── .env.local
 
 
-# React Component Lifecycle Diagram
-https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+1. App.js: Main component that sets up routing and the loading bar.
+
+2. Components/Navbar.js: Component for the navigation bar.
+
+3. Components/News.js: Component that fetches and displays news articles using class-based components.
+
+4. Components/NewsItem.js: Component for displaying individual news articles.
+
+5. Components/Spinner.js: Component for displaying a loading spinner.
+
+6. Components/loading.gif: GIF file used for the loading spinner.
+
+7. App.css: Styling for the App component.
+
+8. index.css: Global styling for the application.
+
+9. index.js: Entry point for the application.
+
+10. .env.local: Environment variable file for storing API keys (not included in version control).
+
+## Contributing
+Contributions are welcome! Follow these steps to contribute:
+
+1. Fork the repository
+
+2. Create your feature branch (git checkout -b feature/AmazingFeature)
+
+3. Commit your changes (git commit -m 'Add some AmazingFeature')
+
+4. Push to the branch (git push origin feature/AmazingFeature)
+
+5. Open a pull request
+
