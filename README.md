@@ -21,20 +21,19 @@ NewsMonkey is a React-based news application that fetches and displays news arti
 To get the project up and running locally, follow these steps:
 
 1. Clone the repository:
-
-    Open Git Bash
-    `git clone https://github.com/your-username/newsmonkey.git`
-
-    cd newsmonkey
+   - Open Git Bash
+    - `git clone https://github.com/your-username/newsmonkey.git`
+    - cd newsmonkey
 
 2. Install dependencies:
-    `npm install`
+   - `npm install`
 
 3. Create a .env file in the root directory and add your News API key
-    **REACT_APP_NEWS_API=your_api_key_here**
+   - **REACT_APP_NEWS_API=your_api_key_here**
 
 4. Start the development server:
-    `npm start`
+   - `npm start`
+   
     Runs the app in the development mode.\
     Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
