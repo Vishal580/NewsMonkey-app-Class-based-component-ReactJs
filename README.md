@@ -9,6 +9,13 @@ NewsMonkey is a React-based news application that fetches and displays news arti
 - Responsive design for an optimal viewing experience on different devices.
 - Simple and clean navigation using 
 
+## Technologies Used
+
+- React
+- React Router
+- NewsAPI
+- Bootstrap
+
 ## Installation
 
 To get the project up and running locally, follow these steps:
@@ -37,45 +44,31 @@ You may also see any lint errors in the console.
 
 Navigate through different news categories using the navbar. The app will fetch and display the latest news articles from the selected category.
 
+## Fetching News Data
+
+The app uses the following NewsAPI endpoint to fetch news articles:
+
+GET `https://newsapi.org/v2/top-headlines?country=us&apiKey=REACT_APP_NEWS_API`
+
+## Environment Variables
+
+REACT_APP_NEWS_API: Your NewsAPI key.
+
 ## Code Structure
 
-src/
-│
-├── Components/
-│   ├── loading.gif
-│   ├── Navbar.js
-│   ├── News.js
-│   ├── NewsItem.js
-│   ├── Spinner.js
-│
-├── App.css
-├── App.js
-├── index.css
-├── index.js (marked with an "M")
-└── .env.local
-
-
-1. App.js: Main component that sets up routing and the loading bar.
-
-2. Components/Navbar.js: Component for the navigation bar.
-
-3. Components/News.js: Component that fetches and displays news articles using class-based components.
-
-4. Components/NewsItem.js: Component for displaying individual news articles.
-
-5. Components/Spinner.js: Component for displaying a loading spinner.
-
-6. Components/loading.gif: GIF file used for the loading spinner.
-
-7. App.css: Styling for the App component.
-
-8. index.css: Global styling for the application.
-
-9. index.js: Entry point for the application.
-
-10. .env.local: Environment variable file for storing API keys (not included in version control).
+- App.js: Main component that sets up routing and the loading bar.
+- Components/Navbar.js: Component for the navigation bar.
+- Components/News.js: Component that fetches and displays news articles using class-based components.
+- Components/NewsItem.js: Component for displaying individual news articles.
+- Components/Spinner.js: Component for displaying a loading spinner.
+- Components/loading.gif: GIF file used for the loading spinner.
+- App.css: Styling for the App component.
+- index.css: Global styling for the application.
+- index.js: Entry point for the application.
+- .env.local: Environment variable file for storing API keys (not included in version control).
 
 ## Contributing
+
 Contributions are welcome! Follow these steps to contribute:
 
 1. Fork the repository
